@@ -48,10 +48,15 @@
 
 .project-section-project-card {
     background-color: #1F0C61;
+    height: 500px;
+    border-radius: 25px;
 }
 
 .project-card-img {
     width: 100%;
+    height: 300px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
 .project-type-heading {
