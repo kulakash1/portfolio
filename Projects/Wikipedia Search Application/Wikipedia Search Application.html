@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="To Do List.css" />
-    <script src="To Do List.js" defer></script>
+    <link rel="stylesheet" href="Wikipedia Search Application.css" />
+    <script src="Wikipedia Search Application.js" defer></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384- JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -16,25 +16,21 @@
 </head>
 
 <body>
-    <div class="todos-bg-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="todos-heading">Todos</h1>
-                    <h1 class="create-task-heading">
-                        Create <span class="create-task-heading-subpart">Task</span>
-                    </h1>
-                    <input type="text" placeholder="What needs to be done?" id="todoUserInput" class="todo-user-input" />
-                    <button class="todo-button" id="addTodoButton">Add</button>
-                    <h1 class="todo-items-heading">
-                        My <span class="todo-items-heading-subpart">Tasks</span>
-                    </h1>
-                    <ul class="todo-items-container" id="todoItemsContainer"></ul>
-                    <button class="todo-button" id="saveTodoButton">Save</button>
-                </div>
-            </div>
+    <div class="main-container">
+        <div class="wiki-search-header text-center">
+          <img class="wiki-logo" src="https://nkb-backend-otg-media-static.s3.ap-south-1.amazonaws.com/ccbp-dynamic-webapps/wiki-logo-img.png" />
+          <br />
+          <input placeholder="Type a keyword and press Enter to search" type="search" class="search-input w-100" id="searchInput" />
         </div>
-    </div>
+        <div class="d-none" id="spinner">
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </div>
 </body>
 
 </html>
