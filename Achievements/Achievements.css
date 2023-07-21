@@ -73,3 +73,149 @@
     font-weight: bold;
     margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* New CSS */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    background-image: linear-gradient(to right, #643EEA, #1F0C61);
+    /* height: 100vh;
+    width: 100vw; */
+    padding: 20px;
+  }
+  
+  .achievement-section {
+    text-align: center;
+  }
+  
+  .certificate-container img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  
+  
+  .certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .certificate {
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .certificate img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+  }
+
+
+  /* ... (Previous CSS code remains the same) ... */
+
+/* Add the following CSS to the end of your CSS file */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  position: relative;
+  /* margin: 5% auto; */
+  text-align: center;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  padding: 20px;
+  max-width: 80vh;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  margin-bottom: 10vh;
+  z-index: 99999;
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #aaa;
+}
